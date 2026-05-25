@@ -178,6 +178,7 @@ display(ui_layout)
 ---
 
 ## ⚙️ How It Works Behind the Scenes
+```text
 [User Text Input] + [Language Selection]
                 │
                 ▼
@@ -187,6 +188,5 @@ display(ui_layout)
                                         ▼                                 ▼
                              [IPython HTML Audio]               [Custom Action Component]
                              (Instant UI Playback)              (Download Button Triggers)
-
 
 
