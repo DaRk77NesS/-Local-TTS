@@ -164,3 +164,30 @@ clear_output()
 print("="*20, "ADVANCED MULTILINGUAL VOICE DASHBOARD", "="*20)
 print("Adjust settings, enter your message, and hit ENTER:\n")
 display(ui_layout)
+
+```
+
+
+## 🎯 How To Use
+
+1. **Configure Parameters:** Select your target language from the dropdown menu and set your speech tempo rate (Normal or Slow).
+2. **Type your Prompt:** Click inside the text input field box and write your sentence.
+3. **Generate:** Press `ENTER` on your keyboard.
+4. **Listen & Save:** Listen to the live audio playback render instantly or click the **Download MP3 File** button to save it locally.
+
+---
+
+## ⚙️ How It Works Behind the Scenes
+[User Text Input] + [Language Selection]
+                │
+                ▼
+      [Google TTS Engine] ──(Processes Frames)──> [Generates .mp3 File]
+                                                         │
+                                        ┌────────────────┴────────────────┐
+                                        ▼                                 ▼
+                             [IPython HTML Audio]               [Custom Action Component]
+                             (Instant UI Playback)              (Download Button Triggers)
+
+
+
+
